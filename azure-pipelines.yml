@@ -11,10 +11,10 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '678f77ec-e89c-410f-99df-0da5e0244b8b'
-  imageRepository: 'mygoweb3'
+  imageRepository: ''
   containerRegistry: 'myregistryfarkhad.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.BuildId)'
+  tag: 'my-go-web3:$(Build.BuildId)'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
